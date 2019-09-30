@@ -1,0 +1,107 @@
+<ion-header no-border>
+    <ion-toolbar color="white">
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-img src="../assets/logo/logo05.jpg" class="logo"></ion-img>
+        <ion-buttons slot="end">
+            <ion-button [routerLink]="['/searchpage']">
+
+                <ion-icon name="search"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-slides [options]="slidesOfers" pager=true>
+        <ion-slide>
+            <ion-card expand="full" full-witdh class="banner" [style.background]="'url(./assets/images/banner.jpg)'">
+                <ion-card-title>PICE</ion-card-title>
+
+            </ion-card>
+
+        </ion-slide>
+        <ion-slide>
+            <ion-card expand="full" class="banner" [style.background]="'url(./assets/images/banner.jpg)'">
+
+            </ion-card>
+
+        </ion-slide>
+    </ion-slides>
+    <ion-slides [options]="slidesOptionsTop">
+        <ion-slide>
+            <ion-card [style.background]="'url(./assets/images/coworking.jpg)'" class="card">
+                <h4>Espacios Coworking</h4>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card [style.background]="'url(./assets/images/viveros.jpg)'" class="card">
+                <h4>Viveros</h4>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card [style.background]="'url(./assets/images/formacion.jpg)'" class="card">
+                <h4>Formación</h4>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card [style.background]="'url(./assets/images/otros.jpg)'" class="card">
+                <h4>Otros</h4>
+            </ion-card>
+        </ion-slide>
+    </ion-slides>
+    <ion-item lines="none">
+        <p slot="start">Cursos de Formación</p>
+        <p class="p1" slot="end" routerLink="/cursosformacion">Ver Todo</p>
+        <!-- <ion-icon name="arrow-forward" slot="end"></ion-icon>-->
+    </ion-item>
+
+    <ion-slides [options]="slidesOptions">
+        <ion-slide>
+            <ion-card class="tv_card">
+                <img class="images-card" src="./assets/images/aula1.jpg">
+                <ion-card-header>
+                    <ion-card-subtitle class="ion-no-padding" class="ion-text-center">Curso Toledo </ion-card-subtitle>
+
+                </ion-card-header>
+                <!-- <ion-card-content>
+                    Keep close
+                </ion-card-content>-->
+            </ion-card>
+        </ion-slide>
+
+        <ion-slide>
+            <ion-card [style.background]="'url(./assets/images/toledo.jpg)'" class="tv_card"></ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card [style.background]="'url(./assets/images/talavera.jpg)'" class="tv_card"></ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card [style.background]="'url(./assets/images/poligono.jpg)'" class="tv_card"></ion-card>
+        </ion-slide>
+    </ion-slides>
+    <ion-item lines="none">
+        <p slot="start">Espacios Coworking</p>
+        <p class="p1" slot="end" routerLink="/espacioscoworking">Ver Todo</p>
+    </ion-item>
+    <ion-slides [options]="slidesOptions">
+        <ion-slide>
+            <ion-card [style.background]="'url(./assets/images/toledo.jpg)'" class="movie_card"></ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card [style.background]="'url(./assets/images/talavera.jpg)'" class="movie_card"></ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card [style.background]="'url(./assets/images/poligono.jpg)'" class="movie_card"></ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card [style.background]="'url(./assets/images/alfileritos.jpg)'" class="movie_card"></ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card [style.background]="'url(./assets/images/poligono.jpg)'" class="movie_card"></ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card [style.background]="'url(./assets/images/alfileritos.jpg)'" class="movie_card"></ion-card>
+        </ion-slide>
+    </ion-slides>
